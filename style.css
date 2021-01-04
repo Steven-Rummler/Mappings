@@ -1,0 +1,35 @@
+body {
+  background-color: #eff;
+  margin: 0;
+}
+
+#number {
+  width: 5em;
+}
+
+#short {
+  max-width: 10vw;
+}
+
+#table {
+  max-width: 100vw;
+}
+
+th {
+  max-width: 30vw;
+  overflow-x: auto;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+}
+
+tr:first-child td {
+  max-width: 10vw;
+}
+
+td {
+  max-width: 30vw;
+  overflow-x: auto;
+}

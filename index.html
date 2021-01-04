@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <title>Mappings Lookup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=stylesheet href=style.css>
+  </head>
+  <body>
+    <h1>Fabric 1.16.4 Mappings Lookup</h1>
+    <label for="category">Type:</label>
+    <select id="category" name="category">
+      <option value="Class">Class</option>
+      <option value="Method">Method</option>
+      <option value="Field">Field</option>
+    </select>
+    <label for="number">Results to Display:</label>
+    <input type="number" id="number" value="20">
+      <table id="table">
+        <thead>
+          <th class="short">
+            Obfuscated
+            <br>
+            <input type="text" id="short" name="short" size="6"/>
+          </th>
+          <th>
+            Official
+            <br>
+            <input type="text" id="real" name="real" />
+          </th>
+          <th>
+            Intermediary
+            <br>
+            <input type="text" id="inter" name="inter"/>
+          </th>
+          <th>
+            Yarn
+            <br>
+            <input type="text" id="yarn" name="yarn" />
+          </th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+    <script src="search.js"></script>
+    </script>
+  </body>
+</html>
