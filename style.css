@@ -3,21 +3,31 @@ body {
   margin: 0;
 }
 
+#header {
+  margin-top: 0.8em;
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
 #number {
   width: 5em;
 }
 
-#short {
-  max-width: 10vw;
+#content {
+  overflow: auto;
+  text-align: center;
 }
 
-#table {
-  max-width: 100vw;
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 th {
-  max-width: 30vw;
-  overflow-x: auto;
   text-align: left;
 }
 
@@ -25,11 +35,6 @@ input {
   width: 100%;
 }
 
-tr:first-child td {
-  max-width: 10vw;
-}
-
 td {
-  max-width: 30vw;
-  overflow-x: auto;
+  border-bottom: 1px solid gray;
 }

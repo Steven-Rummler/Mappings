@@ -16,7 +16,7 @@ function search(order) {
     yarn: yarn,
   };
 
-  fetch("http://localhost:5000", {
+  fetch("https://mapping-api.stevenrummler.com", {
     method: "post",
     headers: {
       Accept: "application/json",
@@ -34,7 +34,6 @@ function search(order) {
         row += "</tr>";
         rows += row;
       }
-      console.log(rows);
       document.getElementById("tbody").innerHTML = rows;
     });
   });
